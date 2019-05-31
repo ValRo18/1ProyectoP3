@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace _1ProyectoP3
 {
-    public partial class Login : Form
+    public partial class Administrador : Form
     {
-        public Login()
+        public Administrador()
         {
             InitializeComponent();
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void TabPage1_Click(object sender, EventArgs e)
         {
-            this.Close();
+
         }
     }
 }

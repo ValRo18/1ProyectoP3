@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace _1ProyectoP3
 {
-    public partial class Login : Form
+    public partial class Usuario : Form
     {
-        public Login()
+        public Usuario()
         {
             InitializeComponent();
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
