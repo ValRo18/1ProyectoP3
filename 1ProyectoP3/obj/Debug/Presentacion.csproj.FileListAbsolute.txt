@@ -20,3 +20,4 @@ C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\1ProyectoP3.exe
 C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\1ProyectoP3.pdb
 C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\_1ProyectoP3.Administrador.resources
 C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\_1ProyectoP3.Usuario.resources
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\_1ProyectoP3.Registro.resources

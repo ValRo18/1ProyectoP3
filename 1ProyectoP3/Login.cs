@@ -21,5 +21,11 @@ namespace _1ProyectoP3
         {
             this.Close();
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            Registro  re = new Registro();
+            re.Show();
+        }
     }
 }

@@ -81,5 +81,45 @@ namespace _1ProyectoP3
         {
 
         }
+
+        private void TabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label22_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
