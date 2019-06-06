@@ -121,5 +121,10 @@ namespace _1ProyectoP3
         {
 
         }
+
+        private void Label24_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
