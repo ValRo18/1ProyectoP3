@@ -1,0 +1,2 @@
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Logica\obj\Debug\Logica.csprojAssemblyReference.cache
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
