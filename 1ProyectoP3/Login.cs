@@ -28,7 +28,12 @@ namespace _1ProyectoP3
 
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Button3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }
