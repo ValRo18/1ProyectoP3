@@ -1,0 +1,11 @@
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\bin\Release\Datos.dll
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\bin\Release\Datos.pdb
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\bin\Release\Npgsql.dll
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\bin\Release\Npgsql.pdb
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\bin\Release\Npgsql.xml
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\obj\Release\Datos.csprojAssemblyReference.cache
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\obj\Release\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\obj\Release\Datos.csproj.CopyComplete
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\obj\Release\Datos.dll
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\obj\Release\Datos.pdb

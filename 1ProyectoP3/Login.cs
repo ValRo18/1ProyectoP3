@@ -6,6 +6,7 @@ namespace _1ProyectoP3
 {
     public partial class Login : Form
     {
+        Logica1 log = new Logica1();
      
         public Login()
         {
@@ -25,7 +26,10 @@ namespace _1ProyectoP3
 
         private void Button1_Click(object sender, EventArgs e)
         {
-
+            String cod = codigo.Text;
+            String con = contrasena.Text;
+            log.ValidarIngreso(cod, con);
+            
         }
     }
 }

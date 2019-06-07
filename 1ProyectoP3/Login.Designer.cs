@@ -33,8 +33,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.codigo = new System.Windows.Forms.TextBox();
+            this.contrasena = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -45,9 +45,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.Location = new System.Drawing.Point(87, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 26);
+            this.label1.Size = new System.Drawing.Size(96, 26);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Usuario:";
+            this.label1.Text = "Codigo:";
             // 
             // label2
             // 
@@ -86,22 +86,22 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // textBox1
+            // codigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(216, 34);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(139, 27);
-            this.textBox1.TabIndex = 4;
+            this.codigo.Location = new System.Drawing.Point(216, 34);
+            this.codigo.Multiline = true;
+            this.codigo.Name = "codigo";
+            this.codigo.Size = new System.Drawing.Size(139, 27);
+            this.codigo.TabIndex = 4;
             // 
-            // textBox2
+            // contrasena
             // 
-            this.textBox2.Location = new System.Drawing.Point(216, 119);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(139, 27);
-            this.textBox2.TabIndex = 5;
+            this.contrasena.Location = new System.Drawing.Point(216, 119);
+            this.contrasena.Multiline = true;
+            this.contrasena.Name = "contrasena";
+            this.contrasena.PasswordChar = '*';
+            this.contrasena.Size = new System.Drawing.Size(139, 27);
+            this.contrasena.TabIndex = 5;
             // 
             // Login
             // 
@@ -109,8 +109,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(958, 587);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.contrasena);
+            this.Controls.Add(this.codigo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -128,8 +128,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox codigo;
+        private System.Windows.Forms.TextBox contrasena;
     }
 }
 
