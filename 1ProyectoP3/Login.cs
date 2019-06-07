@@ -31,5 +31,15 @@ namespace _1ProyectoP3
             log.ValidarIngreso(cod, con);
             
         }
+
+        private void Button3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
