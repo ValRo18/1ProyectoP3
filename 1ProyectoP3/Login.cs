@@ -27,5 +27,10 @@ namespace _1ProyectoP3
             Registro  re = new Registro();
             re.Show();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
