@@ -16,6 +16,7 @@ namespace _1ProyectoP3
 
         private void Button2_Click(object sender, EventArgs e)
         {
+
             this.Close();
         }
 
@@ -23,15 +24,6 @@ namespace _1ProyectoP3
         {
            
         }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            String cod = codigo.Text;
-            String con = contrasena.Text;
-            log.ValidarIngreso(cod, con);
-            
-        }
-
         private void Button3_Click_1(object sender, EventArgs e)
         {
 
@@ -39,6 +31,15 @@ namespace _1ProyectoP3
 
         private void Login_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+
+            String cod = codigo.Text;
+            String con = contrasena.Text;
+            log.ValidarIngreso(cod, con);
 
         }
     }

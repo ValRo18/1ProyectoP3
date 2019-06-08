@@ -20,7 +20,6 @@ C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\1ProyectoP3.exe
 C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\1ProyectoP3.pdb
 C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\_1ProyectoP3.Administrador.resources
 C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\_1ProyectoP3.Usuario.resources
-C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\_1ProyectoP3.Registro.resources
 C:\Users\junio\Desktop\pro\1ProyectoP3\bin\Debug\1ProyectoP3.exe.config
 C:\Users\junio\Desktop\pro\1ProyectoP3\bin\Debug\1ProyectoP3.exe
 C:\Users\junio\Desktop\pro\1ProyectoP3\bin\Debug\1ProyectoP3.pdb
@@ -34,3 +33,12 @@ C:\Users\junio\Desktop\pro\1ProyectoP3\obj\Debug\Presentacion.csproj.GenerateRes
 C:\Users\junio\Desktop\pro\1ProyectoP3\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
 C:\Users\junio\Desktop\pro\1ProyectoP3\obj\Debug\1ProyectoP3.exe
 C:\Users\junio\Desktop\pro\1ProyectoP3\obj\Debug\1ProyectoP3.pdb
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\bin\Debug\Logica.dll
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\bin\Debug\Datos.dll
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\bin\Debug\Npgsql.dll
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\bin\Debug\Logica.pdb
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\bin\Debug\Datos.pdb
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\bin\Debug\Npgsql.pdb
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\bin\Debug\Npgsql.xml
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\Presentacion.csproj.CopyComplete
