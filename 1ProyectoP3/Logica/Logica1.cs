@@ -12,9 +12,17 @@ namespace Logica
     {
         Datos1 da = new Datos1();
 
-        public void ValidarIngreso(string cod, string con)
+        public String ValidarIngreso(string cod, string con)
         {
-            da.ValidarIngresoD(cod, con);
+            String codigo = "";
+            if(da.ValidarIngresoD(cod, con)!="")
+            {
+                codigo = da.ValidarIngresoD(cod, con);
+                String[] c = new string[2];
+                c = codigo.Split('-');
+                codigo = c[0];
+            }
+            return codigo;
         }
     }
 }

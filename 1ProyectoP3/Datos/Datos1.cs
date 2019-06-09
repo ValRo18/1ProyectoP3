@@ -10,18 +10,32 @@ namespace Datos
 
     public class Datos1
     {
-      
-    public void ValidarIngresoD(string cod, string con)
-        {  
-            NpgsqlCommand cmd = new NpgsqlCommand("Select * from usuarios where codigo = '" + cod + "' and contra = '" + con + "' ");
-            NpgsqlDataReader dr = cmd.ExecuteReader();
-            if (dr.HasRows)
-            {
-                while (dr.Read())
+        Datos.Conexion n = new Datos.Conexion();
+
+
+        public String ValidarIngresoD(string codigo, string contra)
+        {
+            String codigoUsuario = "";
+            String query = "select * from usuarios";
+            try
+            { 
+                NpgsqlCommand comm = new NpgsqlCommand(query, n.conectar());
+                NpgsqlDataReader rs = comm.ExecuteReader();
+                while (rs.Read())
                 {
-                    Console.Write("{0}\n", dr[0]);
+                    if (rs.GetValue(1).ToString() == codigo && rs.GetValue(2).ToString() == contra)
+                    {
+                        codigoUsuario = rs.GetValue(1).ToString();
+                        break;
+                    }
                 }
             }
+            catch (Exception x)
+            {
+                
+            }
+            n.desconectar();
+            return codigoUsuario;
         }
     }
 

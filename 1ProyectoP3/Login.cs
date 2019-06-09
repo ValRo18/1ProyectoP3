@@ -39,7 +39,28 @@ namespace _1ProyectoP3
 
             String cod = codigo.Text;
             String con = contrasena.Text;
-            log.ValidarIngreso(cod, con);
+            if(log.ValidarIngreso(cod, con) == "ADT")
+            {
+                Administrador admi = new Administrador();
+                this.Hide();
+                admi.Show();
+            }
+            if (log.ValidarIngreso(cod, con) == "TIQ" || log.ValidarIngreso(cod, con) == "ENC" || log.ValidarIngreso(cod, con) == "ASI")
+            {
+                Usuario usuario = new Usuario();
+                this.Hide();
+                usuario.Show();
+            }
+            else
+            {
+                MessageBox.Show("No registrado");
+            }
+            
+
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
