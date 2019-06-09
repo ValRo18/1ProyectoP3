@@ -9,5 +9,23 @@ namespace Datos
 {
     public class Conexion
     {
-        
+        public NpgsqlConnection conexion = new NpgsqlConnection("Server=localHost;User Id=postgres;Password=123;Database=Proyecto1");
+        public NpgsqlConnection conectar()
+        {
+            try
+            {
+                conexion.Open();
+            }
+            catch (Exception e)
+            {
+                throw new Exception("no se conecto con la base");
+            }
+            return conexion;
+        }
+        public void desconectar()
+        {
+            conexion.Close();
+        }
+
     }
+}
