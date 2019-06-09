@@ -18,7 +18,7 @@ namespace Datos
             }
             catch (Exception e)
             {
-                throw new Exception("no se conecto con la base");
+                throw new Exception("No se conecto con la base");
             }
             return conexion;
         }

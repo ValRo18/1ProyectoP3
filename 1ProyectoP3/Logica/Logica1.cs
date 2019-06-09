@@ -24,5 +24,10 @@ namespace Logica
             }
             return codigo;
         }
+
+        public void RegistarU(string codigoN, string nombreN, string contra)
+        {
+            da.RegistarUsu(codigoN, nombreN, contra);
+        }
     }
 }

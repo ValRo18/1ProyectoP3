@@ -118,14 +118,15 @@
             this.FechVigencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.button18 = new System.Windows.Forms.Button();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.nom = new System.Windows.Forms.TextBox();
+            this.cod = new System.Windows.Forms.TextBox();
+            this.con = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -905,7 +906,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(569, 352);
+            this.label15.Location = new System.Drawing.Point(544, 352);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(169, 20);
             this.label15.TabIndex = 17;
@@ -1051,11 +1052,12 @@
             // 
             // tabPage5
             // 
-            this.tabPage5.BackColor = System.Drawing.Color.Silver;
+            this.tabPage5.BackColor = System.Drawing.Color.Gray;
+            this.tabPage5.Controls.Add(this.button19);
             this.tabPage5.Controls.Add(this.button18);
-            this.tabPage5.Controls.Add(this.textBox21);
-            this.tabPage5.Controls.Add(this.textBox22);
-            this.tabPage5.Controls.Add(this.textBox23);
+            this.tabPage5.Controls.Add(this.nom);
+            this.tabPage5.Controls.Add(this.cod);
+            this.tabPage5.Controls.Add(this.con);
             this.tabPage5.Controls.Add(this.label23);
             this.tabPage5.Controls.Add(this.label24);
             this.tabPage5.Controls.Add(this.label25);
@@ -1076,28 +1078,29 @@
             this.button18.TabIndex = 15;
             this.button18.Text = "Listo";
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.Button18_Click);
             // 
-            // textBox21
+            // nom
             // 
-            this.textBox21.Location = new System.Drawing.Point(272, 189);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(123, 22);
-            this.textBox21.TabIndex = 14;
+            this.nom.Location = new System.Drawing.Point(299, 189);
+            this.nom.Name = "nom";
+            this.nom.Size = new System.Drawing.Size(123, 22);
+            this.nom.TabIndex = 14;
             // 
-            // textBox22
+            // cod
             // 
-            this.textBox22.Location = new System.Drawing.Point(272, 124);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(123, 22);
-            this.textBox22.TabIndex = 13;
+            this.cod.Location = new System.Drawing.Point(299, 124);
+            this.cod.Name = "cod";
+            this.cod.Size = new System.Drawing.Size(123, 22);
+            this.cod.TabIndex = 13;
             // 
-            // textBox23
+            // con
             // 
-            this.textBox23.Location = new System.Drawing.Point(272, 275);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.PasswordChar = '*';
-            this.textBox23.Size = new System.Drawing.Size(123, 22);
-            this.textBox23.TabIndex = 12;
+            this.con.Location = new System.Drawing.Point(299, 273);
+            this.con.Name = "con";
+            this.con.PasswordChar = '*';
+            this.con.Size = new System.Drawing.Size(123, 22);
+            this.con.TabIndex = 12;
             // 
             // label23
             // 
@@ -1150,6 +1153,18 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Cerrar secion";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.Gold;
+            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.Location = new System.Drawing.Point(21, 567);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(94, 39);
+            this.button19.TabIndex = 16;
+            this.button19.Text = "Codigos";
+            this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.Button19_Click);
             // 
             // Administrador
             // 
@@ -1272,12 +1287,13 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox nom;
+        private System.Windows.Forms.TextBox cod;
+        private System.Windows.Forms.TextBox con;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.Button button19;
     }
 }

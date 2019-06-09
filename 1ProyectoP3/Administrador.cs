@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Logica;
 
 namespace _1ProyectoP3
 {
     public partial class Administrador : Form
     {
+        Logica1 log = new Logica1();
         public Administrador()
         {
             InitializeComponent();
@@ -125,6 +127,19 @@ namespace _1ProyectoP3
         private void Label24_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button19_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Administradores de Terminal = ADT-000\nTiqueteros(as) = TIQ-000\nEncomiendas = ENC-000\nAsistentes Administrativos= ASI-000");
+        }
+
+        private void Button18_Click(object sender, EventArgs e)
+        {
+            String codigoN = cod.Text;
+            String nombreN = nom.Text;
+            String contra = con.Text;
+            log.RegistarU(codigoN, nombreN, contra); ;
         }
     }
 }

@@ -15,6 +15,7 @@ namespace Datos
 
         public String ValidarIngresoD(string codigo, string contra)
         {
+            Datos.Conexion n = new Datos.Conexion();
             String codigoUsuario = "";
             String query = "select * from usuarios";
             try
@@ -37,6 +38,31 @@ namespace Datos
             n.desconectar();
             return codigoUsuario;
         }
+
+        public void RegistarUsu(string codigoN, string nombreN, string contra)
+        {
+            Datos.Conexion n = new Datos.Conexion();
+            String sqlCode = "INSERT INTO usuarios (nombre,codigo,contra,tipo)" + " VALUES('{0}','{1}','{2}');";
+            sqlCode = string.Format(sqlCode, codigoN, nombreN, contra);
+            try
+            {
+                NpgsqlCommand command = new NpgsqlCommand(sqlCode, n.conectar());
+                command.ExecuteNonQuery();
+            }
+            catch (NpgsqlException e)
+            {
+                throw new Exception("No se pudo insertar");
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+            finally
+            {
+                n.desconectar();
+            }
+        }
+
     }
 
 }
