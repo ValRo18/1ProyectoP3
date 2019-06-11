@@ -45,12 +45,9 @@ namespace _1ProyectoP3
                 this.Hide();
                 admi.Show();
             }
-            if (log.ValidarIngreso(cod, con) == "TIQ" || log.ValidarIngreso(cod, con) == "ENC" || log.ValidarIngreso(cod, con) == "ASI")
+            /*else if (log.ValidarIngreso(cod, con) == "TIQ" || log.ValidarIngreso(cod, con) == "ENC" || log.ValidarIngreso(cod, con) == "ASI")
             {
-                Usuario usuario = new Usuario();
-                this.Hide();
-                usuario.Show();
-            }
+            }*/
             else
             {
                 MessageBox.Show("No registrado");

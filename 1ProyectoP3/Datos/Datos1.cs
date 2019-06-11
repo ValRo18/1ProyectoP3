@@ -33,7 +33,7 @@ namespace Datos
             }
             catch (Exception x)
             {
-                
+                throw new Exception("No se pudo insertar");
             }
             n.desconectar();
             return codigoUsuario;
@@ -42,8 +42,8 @@ namespace Datos
         public void RegistarUsu(string codigoN, string nombreN, string contra)
         {
             Datos.Conexion n = new Datos.Conexion();
-            String sqlCode = "INSERT INTO usuarios (nombre,codigo,contra,tipo)" + " VALUES('{0}','{1}','{2}');";
-            sqlCode = string.Format(sqlCode, codigoN, nombreN, contra);
+            String sqlCode = "INSERT INTO usuarios (nombre,codigo,contra,tipo)" + " VALUES('{0}','{1}','{2}',{3});";
+            sqlCode = string.Format(sqlCode, codigoN, nombreN, contra,"false");
             try
             {
                 NpgsqlCommand command = new NpgsqlCommand(sqlCode, n.conectar());
