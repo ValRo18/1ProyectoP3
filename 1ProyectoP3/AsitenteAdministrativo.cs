@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace _1ProyectoP3
 {
-    public partial class Usuario : Form
+    public partial class AsitenteAdministrativo : Form
     {
-        public Usuario()
+        public AsitenteAdministrativo()
         {
             InitializeComponent();
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

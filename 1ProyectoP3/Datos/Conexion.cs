@@ -9,7 +9,7 @@ namespace Datos
 {
     public class Conexion
     {
-        public NpgsqlConnection conexion = new NpgsqlConnection("Server=localHost;User Id=postgres;Password=123;Database=Proyecto1");
+        public NpgsqlConnection conexion = new NpgsqlConnection("Server=localhost;User Id=postgres;Password=123;Database=Proyecto1");
         public NpgsqlConnection conectar()
         {
             try

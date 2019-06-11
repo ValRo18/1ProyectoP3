@@ -1,6 +1,6 @@
 ﻿namespace _1ProyectoP3
 {
-    partial class Usuario
+    partial class Tiquetes
     {
         /// <summary>
         /// Required designer variable.
@@ -35,42 +35,41 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(0, 6);
+            this.button1.Location = new System.Drawing.Point(0, -1);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 79);
+            this.button1.Size = new System.Drawing.Size(85, 78);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(0, 91);
+            this.button2.Location = new System.Drawing.Point(0, 72);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 79);
+            this.button2.Size = new System.Drawing.Size(85, 80);
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(0, 176);
+            this.button3.Location = new System.Drawing.Point(0, 148);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 79);
+            this.button3.Size = new System.Drawing.Size(85, 80);
             this.button3.TabIndex = 2;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // Usuario
+            // Tiquetes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 590);
+            this.ClientSize = new System.Drawing.Size(800, 504);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Usuario";
-            this.Text = "Usuario";
+            this.Name = "Tiquetes";
+            this.Text = "Tiquetes";
             this.ResumeLayout(false);
 
         }

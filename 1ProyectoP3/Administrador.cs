@@ -141,5 +141,23 @@ namespace _1ProyectoP3
             String contra = con.Text;
             log.RegistarU(codigoN, nombreN, contra); ;
         }
+
+        private void Button20_Click(object sender, EventArgs e)
+        {
+            Tiquetes ti = new Tiquetes();
+            ti.Show();
+        }
+
+        private void Button21_Click(object sender, EventArgs e)
+        {
+            Encomiendas en = new Encomiendas();
+            en.Show();
+        }
+
+        private void Button22_Click(object sender, EventArgs e)
+        {
+            Reportes re = new Reportes();
+            re.Show();
+        }
     }
 }

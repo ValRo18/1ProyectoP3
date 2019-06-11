@@ -63,3 +63,6 @@ C:\Users\junio\Desktop\Proyecto\1ProyectoP3\bin\Debug\Datos.pdb
 C:\Users\junio\Desktop\Proyecto\1ProyectoP3\bin\Debug\Npgsql.pdb
 C:\Users\junio\Desktop\Proyecto\1ProyectoP3\bin\Debug\Npgsql.xml
 C:\Users\junio\Desktop\Proyecto\1ProyectoP3\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\_1ProyectoP3.AsitenteAdministrativo.resources
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\_1ProyectoP3.Reportes.resources
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\_1ProyectoP3.Tiquetes.resources

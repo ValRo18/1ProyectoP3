@@ -117,6 +117,7 @@
             this.NumPermiso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechVigencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.button19 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.nom = new System.Windows.Forms.TextBox();
             this.cod = new System.Windows.Forms.TextBox();
@@ -126,7 +127,9 @@
             this.label25 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -141,16 +144,16 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(2, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(901, 663);
+            this.tabControl1.Size = new System.Drawing.Size(879, 663);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.TabControl1_SelectedIndexChanged);
             // 
@@ -171,7 +174,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(893, 634);
+            this.tabPage1.Size = new System.Drawing.Size(871, 634);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "CRUD Rutas";
             this.tabPage1.Click += new System.EventHandler(this.TabPage1_Click);
@@ -346,7 +349,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(893, 634);
+            this.tabPage2.Size = new System.Drawing.Size(871, 634);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "CRUD Horarios";
             this.tabPage2.Click += new System.EventHandler(this.TabPage2_Click);
@@ -589,7 +592,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(893, 634);
+            this.tabPage3.Size = new System.Drawing.Size(871, 634);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "CRUD Terminal";
             // 
@@ -764,7 +767,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(893, 634);
+            this.tabPage4.Size = new System.Drawing.Size(871, 634);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "CRUD Unidades";
             // 
@@ -1064,9 +1067,21 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(893, 634);
+            this.tabPage5.Size = new System.Drawing.Size(871, 634);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Registrar";
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.Gold;
+            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.Location = new System.Drawing.Point(21, 567);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(94, 39);
+            this.button19.TabIndex = 16;
+            this.button19.Text = "Codigos";
+            this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.Button19_Click);
             // 
             // button18
             // 
@@ -1138,39 +1153,67 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(893, 634);
+            this.tabPage6.Size = new System.Drawing.Size(871, 634);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Permisos";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Gray;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(899, 0);
+            this.button1.Location = new System.Drawing.Point(883, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(68, 52);
+            this.button1.Size = new System.Drawing.Size(93, 45);
             this.button1.TabIndex = 1;
             this.button1.Text = "Cerrar secion";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // button19
+            // button20
             // 
-            this.button19.BackColor = System.Drawing.Color.Gold;
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.Location = new System.Drawing.Point(21, 567);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(94, 39);
-            this.button19.TabIndex = 16;
-            this.button19.Text = "Codigos";
-            this.button19.UseVisualStyleBackColor = false;
-            this.button19.Click += new System.EventHandler(this.Button19_Click);
+            this.button20.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.Location = new System.Drawing.Point(883, 103);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(93, 48);
+            this.button20.TabIndex = 2;
+            this.button20.Text = "Tiquetes";
+            this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.Button20_Click);
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.Location = new System.Drawing.Point(883, 188);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(93, 49);
+            this.button21.TabIndex = 3;
+            this.button21.Text = "Encomiendas";
+            this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.Button21_Click);
+            // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.Location = new System.Drawing.Point(883, 297);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(93, 43);
+            this.button22.TabIndex = 4;
+            this.button22.Text = "Reportes";
+            this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.Button22_Click);
             // 
             // Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(964, 662);
+            this.ClientSize = new System.Drawing.Size(977, 662);
+            this.Controls.Add(this.button22);
+            this.Controls.Add(this.button21);
+            this.Controls.Add(this.button20);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl1);
             this.Name = "Administrador";
@@ -1295,5 +1338,8 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
     }
 }
