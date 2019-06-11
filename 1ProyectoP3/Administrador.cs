@@ -159,5 +159,10 @@ namespace _1ProyectoP3
             Reportes re = new Reportes();
             re.Show();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

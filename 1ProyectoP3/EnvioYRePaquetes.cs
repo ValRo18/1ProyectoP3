@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace _1ProyectoP3
 {
-    public partial class Tiquetes : Form
+    public partial class EnvioYRePaquetes : Form
     {
-        public Tiquetes()
+        public EnvioYRePaquetes()
         {
             InitializeComponent();
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

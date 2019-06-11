@@ -62,11 +62,23 @@
     <Compile Include="AsitenteAdministrativo.Designer.cs">
       <DependentUpon>AsitenteAdministrativo.cs</DependentUpon>
     </Compile>
+    <Compile Include="CierreCajaEncomienda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CierreCajaEncomienda.Designer.cs">
+      <DependentUpon>CierreCajaEncomienda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Encomiendas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Encomiendas.Designer.cs">
       <DependentUpon>Encomiendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnvioYRePaquetes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnvioYRePaquetes.Designer.cs">
+      <DependentUpon>EnvioYRePaquetes.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -93,6 +105,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AsitenteAdministrativo.resx">
       <DependentUpon>AsitenteAdministrativo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CierreCajaEncomienda.resx">
+      <DependentUpon>CierreCajaEncomienda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Encomiendas.resx">
+      <DependentUpon>Encomiendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnvioYRePaquetes.resx">
+      <DependentUpon>EnvioYRePaquetes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

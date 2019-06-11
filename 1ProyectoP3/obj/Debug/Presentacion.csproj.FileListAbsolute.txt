@@ -66,3 +66,6 @@ C:\Users\junio\Desktop\Proyecto\1ProyectoP3\obj\Debug\Presentacion.csproj.CopyCo
 C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\_1ProyectoP3.AsitenteAdministrativo.resources
 C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\_1ProyectoP3.Reportes.resources
 C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\_1ProyectoP3.Tiquetes.resources
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\_1ProyectoP3.CierreCajaEncomienda.resources
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\_1ProyectoP3.Encomiendas.resources
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\obj\Debug\_1ProyectoP3.EnvioYRePaquetes.resources
