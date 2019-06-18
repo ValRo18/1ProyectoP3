@@ -16,5 +16,22 @@ namespace _1ProyectoP3
         {
             InitializeComponent();
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            EnvioYRePaquetes en = new EnvioYRePaquetes();
+            en.Show();
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            CierreCajaEncomienda ci = new CierreCajaEncomienda();
+            ci.Show();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

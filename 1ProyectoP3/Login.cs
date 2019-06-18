@@ -39,15 +39,23 @@ namespace _1ProyectoP3
 
             String cod = codigo.Text;
             String con = contrasena.Text;
-            if(log.ValidarIngreso(cod, con) == "ADT")
+            if (log.ValidarIngreso(cod, con) == "ADT")
             {
                 Administrador admi = new Administrador();
                 this.Hide();
                 admi.Show();
             }
-            /*else if (log.ValidarIngreso(cod, con) == "TIQ" || log.ValidarIngreso(cod, con) == "ENC" || log.ValidarIngreso(cod, con) == "ASI")
-            {
-            }*/
+            else if (log.ValidarIngreso(cod, con) == "TIQ") {
+                Tiquetes ti = new Tiquetes();
+            }
+            else if (log.ValidarIngreso(cod, con) == "ENC") {
+                Encomiendas en = new Encomiendas();
+                this.Hide();
+                en.Show();
+            }
+            else if (log.ValidarIngreso(cod, con) == "ASI") {
+                AsitenteAdministrativo asd = new AsitenteAdministrativo();
+            }
             else
             {
                 MessageBox.Show("No registrado");

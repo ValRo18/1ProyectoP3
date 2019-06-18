@@ -7,7 +7,7 @@ using Datos;
 
 namespace Logica
 {
-     
+
     public class Logica1
     {
         Datos1 da = new Datos1();
@@ -15,7 +15,7 @@ namespace Logica
         public String ValidarIngreso(string cod, string con)
         {
             String codigo = "";
-            if(da.ValidarIngresoD(cod, con)!="")
+            if (da.ValidarIngresoD(cod, con) != "")
             {
                 codigo = da.ValidarIngresoD(cod, con);
                 String[] c = new string[2];
@@ -28,6 +28,33 @@ namespace Logica
         public void RegistarU(string codigoN, string nombreN, string contra)
         {
             da.RegistarUsu(codigoN, nombreN, contra);
+        }
+        public string getDate()
+        {
+            String fecha = "";
+            fecha = DateTime.Now.ToString("dd/MM/yyyyHH:mm:ss");
+            return fecha;
+        }
+
+        public List<String> extraerTermiales() {
+            List<String> terminales = da.extraerTerminales();
+            return terminales;
+        }
+        public List<String> extraerUnidades()
+        {
+            List<String> unidades= da.extraerUnidades();
+            return unidades;
+        }
+
+        public string insertarEncomienda(string codEnc, string dirigido, double pagar, string terminal, string unidad)
+        {
+            string mensaje = da.enviarEncomienda(codEnc, dirigido, pagar, terminal, unidad, getDate());
+            return mensaje;
+        }
+
+        public void buscarPaquete(string cedula)
+        {
+            da.BuscarPaquete(cedula);
         }
     }
 }

@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.HLlegada = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HSalida = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IDTerminal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IDRuta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IDHorario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.IDHorario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDRuta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDTerminal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HSalida = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HLlegada = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button10 = new System.Windows.Forms.Button();
@@ -154,121 +154,57 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(794, 584);
+            this.tabPage3.Size = new System.Drawing.Size(905, 618);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "CRUD Horarios";
             // 
-            // button6
+            // dateTimePicker1
             // 
-            this.button6.BackColor = System.Drawing.Color.DarkCyan;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(211, 513);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(96, 38);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "Consultar";
-            this.button6.UseVisualStyleBackColor = false;
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.DarkGray;
+            this.dateTimePicker1.Location = new System.Drawing.Point(759, 217);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(100, 22);
+            this.dateTimePicker1.TabIndex = 19;
             // 
-            // button7
+            // textBox9
             // 
-            this.button7.BackColor = System.Drawing.Color.DarkCyan;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(360, 513);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(92, 38);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "Eliminar";
-            this.button7.UseVisualStyleBackColor = false;
+            this.textBox9.BackColor = System.Drawing.Color.White;
+            this.textBox9.Location = new System.Drawing.Point(759, 45);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 22);
+            this.textBox9.TabIndex = 18;
             // 
-            // button8
+            // textBox8
             // 
-            this.button8.BackColor = System.Drawing.Color.DarkCyan;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(490, 513);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(93, 38);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "Modificar";
-            this.button8.UseVisualStyleBackColor = false;
+            this.textBox8.BackColor = System.Drawing.Color.White;
+            this.textBox8.Location = new System.Drawing.Point(759, 96);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 22);
+            this.textBox8.TabIndex = 17;
             // 
-            // button9
+            // textBox7
             // 
-            this.button9.BackColor = System.Drawing.Color.DarkCyan;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(75, 513);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(92, 38);
-            this.button9.TabIndex = 3;
-            this.button9.Text = "Agregar";
-            this.button9.UseVisualStyleBackColor = false;
+            this.textBox7.BackColor = System.Drawing.Color.White;
+            this.textBox7.Location = new System.Drawing.Point(759, 165);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 22);
+            this.textBox7.TabIndex = 16;
             // 
-            // label4
+            // textBox5
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(635, 167);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 20);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Id-Terminal:";
+            this.textBox5.BackColor = System.Drawing.Color.White;
+            this.textBox5.Location = new System.Drawing.Point(759, 266);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 22);
+            this.textBox5.TabIndex = 14;
             // 
-            // label5
+            // textBox4
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(669, 98);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 20);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Id-Ruta:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(645, 47);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 20);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Id-Horario:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(617, 331);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(128, 20);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Hora Llegada:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(701, 217);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 20);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Dia:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(631, 266);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(114, 20);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "Hora Salida:";
+            this.textBox4.BackColor = System.Drawing.Color.White;
+            this.textBox4.Location = new System.Drawing.Point(759, 329);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 22);
+            this.textBox4.TabIndex = 13;
             // 
             // dataGridView2
             // 
@@ -288,33 +224,12 @@
             this.dataGridView2.Size = new System.Drawing.Size(611, 454);
             this.dataGridView2.TabIndex = 12;
             // 
-            // HLlegada
+            // IDHorario
             // 
-            this.HLlegada.HeaderText = "HLlegada";
-            this.HLlegada.MinimumWidth = 6;
-            this.HLlegada.Name = "HLlegada";
-            this.HLlegada.Width = 125;
-            // 
-            // HSalida
-            // 
-            this.HSalida.HeaderText = "HSalida";
-            this.HSalida.MinimumWidth = 6;
-            this.HSalida.Name = "HSalida";
-            this.HSalida.Width = 125;
-            // 
-            // Dia
-            // 
-            this.Dia.HeaderText = "Dia";
-            this.Dia.MinimumWidth = 6;
-            this.Dia.Name = "Dia";
-            this.Dia.Width = 125;
-            // 
-            // IDTerminal
-            // 
-            this.IDTerminal.HeaderText = "IDTerminal";
-            this.IDTerminal.MinimumWidth = 6;
-            this.IDTerminal.Name = "IDTerminal";
-            this.IDTerminal.Width = 125;
+            this.IDHorario.HeaderText = "IDHorario";
+            this.IDHorario.MinimumWidth = 6;
+            this.IDHorario.Name = "IDHorario";
+            this.IDHorario.Width = 125;
             // 
             // IDRuta
             // 
@@ -323,60 +238,145 @@
             this.IDRuta.Name = "IDRuta";
             this.IDRuta.Width = 125;
             // 
-            // IDHorario
+            // IDTerminal
             // 
-            this.IDHorario.HeaderText = "IDHorario";
-            this.IDHorario.MinimumWidth = 6;
-            this.IDHorario.Name = "IDHorario";
-            this.IDHorario.Width = 125;
+            this.IDTerminal.HeaderText = "IDTerminal";
+            this.IDTerminal.MinimumWidth = 6;
+            this.IDTerminal.Name = "IDTerminal";
+            this.IDTerminal.Width = 125;
             // 
-            // textBox4
+            // Dia
             // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(759, 329);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 13;
+            this.Dia.HeaderText = "Dia";
+            this.Dia.MinimumWidth = 6;
+            this.Dia.Name = "Dia";
+            this.Dia.Width = 125;
             // 
-            // textBox5
+            // HSalida
             // 
-            this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(759, 266);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 14;
+            this.HSalida.HeaderText = "HSalida";
+            this.HSalida.MinimumWidth = 6;
+            this.HSalida.Name = "HSalida";
+            this.HSalida.Width = 125;
             // 
-            // textBox7
+            // HLlegada
             // 
-            this.textBox7.BackColor = System.Drawing.Color.White;
-            this.textBox7.Location = new System.Drawing.Point(759, 165);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 22);
-            this.textBox7.TabIndex = 16;
+            this.HLlegada.HeaderText = "HLlegada";
+            this.HLlegada.MinimumWidth = 6;
+            this.HLlegada.Name = "HLlegada";
+            this.HLlegada.Width = 125;
             // 
-            // textBox8
+            // label11
             // 
-            this.textBox8.BackColor = System.Drawing.Color.White;
-            this.textBox8.Location = new System.Drawing.Point(759, 96);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 22);
-            this.textBox8.TabIndex = 17;
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(631, 266);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(114, 20);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "Hora Salida:";
             // 
-            // textBox9
+            // label8
             // 
-            this.textBox9.BackColor = System.Drawing.Color.White;
-            this.textBox9.Location = new System.Drawing.Point(759, 45);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 22);
-            this.textBox9.TabIndex = 18;
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(701, 217);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(44, 20);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Dia:";
             // 
-            // dateTimePicker1
+            // label7
             // 
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.DarkGray;
-            this.dateTimePicker1.Location = new System.Drawing.Point(759, 217);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(100, 22);
-            this.dateTimePicker1.TabIndex = 19;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(617, 331);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(128, 20);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Hora Llegada:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(645, 47);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(100, 20);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Id-Horario:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(669, 98);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(76, 20);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Id-Ruta:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(635, 167);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(110, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Id-Terminal:";
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.DarkCyan;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(75, 513);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(92, 38);
+            this.button9.TabIndex = 3;
+            this.button9.Text = "Agregar";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.DarkCyan;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(490, 513);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(93, 38);
+            this.button8.TabIndex = 2;
+            this.button8.Text = "Modificar";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.DarkCyan;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(360, 513);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(92, 38);
+            this.button7.TabIndex = 1;
+            this.button7.Text = "Eliminar";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.DarkCyan;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(211, 513);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(96, 38);
+            this.button6.TabIndex = 0;
+            this.button6.Text = "Consultar";
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // tabControl1
             // 
@@ -879,7 +879,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(794, 584);
+            this.tabPage2.Size = new System.Drawing.Size(905, 618);
             this.tabPage2.TabIndex = 5;
             this.tabPage2.Text = "CRUD Rutas";
             // 
@@ -1022,9 +1022,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(911, 144);
+            this.button1.Location = new System.Drawing.Point(918, 144);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 44);
+            this.button1.Size = new System.Drawing.Size(84, 44);
             this.button1.TabIndex = 12;
             this.button1.Text = "Cierre Tiquetes";
             this.button1.UseVisualStyleBackColor = true;
@@ -1033,9 +1033,9 @@
             // 
             this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Location = new System.Drawing.Point(911, 350);
+            this.button22.Location = new System.Drawing.Point(918, 350);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(91, 43);
+            this.button22.Size = new System.Drawing.Size(84, 43);
             this.button22.TabIndex = 5;
             this.button22.Text = "Reportes";
             this.button22.UseVisualStyleBackColor = false;
@@ -1054,9 +1054,9 @@
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(911, 245);
+            this.button19.Location = new System.Drawing.Point(918, 245);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(93, 44);
+            this.button19.Size = new System.Drawing.Size(86, 44);
             this.button19.TabIndex = 13;
             this.button19.Text = "Cierre Encomiendas";
             this.button19.UseVisualStyleBackColor = true;
