@@ -117,7 +117,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.tabPage3.SuspendLayout();
@@ -1029,17 +1028,6 @@
             this.button1.Text = "Cierre Tiquetes";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Location = new System.Drawing.Point(918, 350);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(84, 43);
-            this.button22.TabIndex = 5;
-            this.button22.Text = "Reportes";
-            this.button22.UseVisualStyleBackColor = false;
-            // 
             // button18
             // 
             this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -1069,7 +1057,6 @@
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button18);
-            this.Controls.Add(this.button22);
             this.Controls.Add(this.tabControl1);
             this.Name = "AsitenteAdministrativo";
             this.Text = "AsitenteAdministrativo";
@@ -1181,7 +1168,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
     }

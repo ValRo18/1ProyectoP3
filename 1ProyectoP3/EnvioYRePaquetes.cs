@@ -18,9 +18,8 @@ namespace _1ProyectoP3
         {
             InitializeComponent();
             codTerminal.DataSource = log.extraerTermiales();
-            codTerminal.DisplayMember = "Terminales";
             codUnidad.DataSource = log.extraerUnidades();
-            codUnidad.DisplayMember = "Unidades";
+            
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -51,6 +50,11 @@ namespace _1ProyectoP3
         {
             String cedula = numCedula.Text;
             log.buscarPaquete(cedula);
+        }
+
+        private void NumCedula_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

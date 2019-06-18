@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
-using System.Windows.Input;
+
 
 namespace Datos
 {
@@ -12,6 +12,8 @@ namespace Datos
     public class Datos1
     {
         Datos.Conexion n = new Datos.Conexion();
+         public string terminal = "";
+       
 
 
         public String ValidarIngresoD(string codigo, string contra)
@@ -28,6 +30,8 @@ namespace Datos
                     if (rs.GetValue(1).ToString() == codigo && rs.GetValue(2).ToString() == contra)
                     {
                         codigoUsuario = rs.GetValue(1).ToString();
+                       terminal = rs.GetValue(4).ToString();
+
                         break;
                     }
                 }
@@ -66,32 +70,32 @@ namespace Datos
             return terminales;
         }
 
-        public List<string> BuscarPaquete(string cedula, string terminal)
-        {
-            Datos.Conexion n = new Datos.Conexion();
-            List<String> encomienda = new List<String>();
+        //public List<string> BuscarPaquete(string cedula)
+        //{
+        //    Datos.Conexion n = new Datos.Conexion();
+        //    List<String> encomienda = new List<String>();
 
-            String query = "select cod_encomienda,fecha,nombre,estado from encomiendas where nombre ='" +cedula+"' and id_terminal ='"+terminal+"'";
-            String tem = "";
-            try
-            {
-                NpgsqlCommand comm = new NpgsqlCommand(query, n.conectar());
-                NpgsqlDataReader rs = comm.ExecuteReader();
-                while (rs.Read())
-                {
-                    tem = rs.GetString(0);
-                    encomienda.Add(tem);
+        //    String query = "select cod_encomienda,fecha,nombre,estado from encomiendas where nombre ='" +cedula+"' and id_terminal ='"+terminal+"'";
+            
+        //    try
+        //    {
+        //        NpgsqlCommand comm = new NpgsqlCommand(query, n.conectar());
+        //        NpgsqlDataReader rs = comm.ExecuteReader();
+        //        while (rs.Read())
+        //        {
+        //            tem = rs.GetString(0);
+                    
 
-                }
-                rs.Close();
-            }
-            catch (Exception x)
-            {
-                throw new Exception("No se pudo extraer");
-            }
-            n.desconectar();
-            return encomienda;
-        }
+        //        }
+        //        rs.Close();
+        //    }
+        //    catch (Exception x)
+        //    {
+        //        throw new Exception("No se pudo extraer");
+        //    }
+        //    n.desconectar();
+        //    return encomienda;
+        //}
         public string enviarEncomienda(string codEnc, string dirigido, double pagar, string terminal, string unidad, string fecha)
         {
             String mensaje = "Encomienda Enviada";

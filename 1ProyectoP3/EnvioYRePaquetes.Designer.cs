@@ -42,16 +42,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Recibidos = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.numCedula = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.numCedula = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.NumEncomienda = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Persona = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Enviar.SuspendLayout();
             this.Recibidos.SuspendLayout();
@@ -212,17 +212,44 @@
             this.Recibidos.TabIndex = 1;
             this.Recibidos.Text = "Recibidos";
             // 
-            // button2
+            // button4
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(733, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(68, 48);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Volver";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button4.Location = new System.Drawing.Point(592, 488);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(122, 36);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Entregar";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(520, 219);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(135, 40);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Buscar Paquete";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
+            // numCedula
+            // 
+            this.numCedula.Location = new System.Drawing.Point(500, 136);
+            this.numCedula.Name = "numCedula";
+            this.numCedula.Size = new System.Drawing.Size(175, 24);
+            this.numCedula.TabIndex = 2;
+            this.numCedula.TextChanged += new System.EventHandler(this.NumCedula_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(497, 84);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(196, 36);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Numero de cedula\r\n de la persona que retira:";
             // 
             // dataGridView1
             // 
@@ -239,44 +266,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(471, 358);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(497, 84);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(196, 36);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Numero de cedula\r\n de la persona que retira:";
-            // 
-            // numCedula
-            // 
-            this.numCedula.Location = new System.Drawing.Point(500, 136);
-            this.numCedula.Name = "numCedula";
-            this.numCedula.Size = new System.Drawing.Size(175, 24);
-            this.numCedula.TabIndex = 2;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(520, 219);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(135, 40);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Buscar Paquete";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button4.Location = new System.Drawing.Point(592, 488);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(122, 36);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Entregar";
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // NumEncomienda
             // 
@@ -305,6 +294,18 @@
             this.Estado.MinimumWidth = 6;
             this.Estado.Name = "Estado";
             this.Estado.Width = 125;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(733, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(68, 48);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Volver";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // EnvioYRePaquetes
             // 
