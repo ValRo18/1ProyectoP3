@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
+
 
 
 namespace Datos
@@ -12,7 +14,14 @@ namespace Datos
     public class Datos1
     {
         Datos.Conexion n = new Datos.Conexion();
-         public string terminal = "";
+        private int terminal;
+        public void setTerminal(int termin) {
+
+            terminal = termin ;
+        }
+        public int getTerminal() {
+            return this.terminal;
+        }
        
 
 
@@ -30,7 +39,7 @@ namespace Datos
                     if (rs.GetValue(1).ToString() == codigo && rs.GetValue(2).ToString() == contra)
                     {
                         codigoUsuario = rs.GetValue(1).ToString();
-                       terminal = rs.GetValue(4).ToString();
+                        setTerminal(Convert.ToInt32(rs.GetValue(4)));
 
                         break;
                     }
@@ -43,12 +52,35 @@ namespace Datos
             n.desconectar();
             return codigoUsuario;
         }
-        
-        public List<String> extraerTerminales() {
+
+        public string MontodeCaja(DateTime fecha)
+        {
             Datos.Conexion n = new Datos.Conexion();
+            String query = "select sum(total) from encomiendas where fecha ='"+fecha+"'";
+            String monto = "";
+            try
+            {
+                NpgsqlCommand comm = new NpgsqlCommand(query, n.conectar());
+                NpgsqlDataReader rs = comm.ExecuteReader();
+                while (rs.Read())
+                {
+                   monto = rs.GetString(0);
+                }
+                rs.Close();
+            }
+            catch (Exception x)
+            {
+                throw new Exception("No se pudo extraer", x);
+            }
+            n.desconectar();
+            return monto;
+        }
+
+        public List<String> extraerTerminales() {
+           
             List<String> terminales = new List<String>();
 
-            String query = "select id_terinal from terminal";
+            String query = "select id_terinal from terminal where id_terinal <>"+terminal;
             String nombre = "";
             try
             {
@@ -64,38 +96,31 @@ namespace Datos
             }
             catch (Exception x)
             {
-                throw new Exception("No se pudo extraer");
+                throw new Exception("No se pudo extraer",x);
             }
             n.desconectar();
             return terminales;
         }
 
-        //public List<string> BuscarPaquete(string cedula)
-        //{
-        //    Datos.Conexion n = new Datos.Conexion();
-        //    List<String> encomienda = new List<String>();
-
-        //    String query = "select cod_encomienda,fecha,nombre,estado from encomiendas where nombre ='" +cedula+"' and id_terminal ='"+terminal+"'";
-            
-        //    try
-        //    {
-        //        NpgsqlCommand comm = new NpgsqlCommand(query, n.conectar());
-        //        NpgsqlDataReader rs = comm.ExecuteReader();
-        //        while (rs.Read())
-        //        {
-        //            tem = rs.GetString(0);
-                    
-
-        //        }
-        //        rs.Close();
-        //    }
-        //    catch (Exception x)
-        //    {
-        //        throw new Exception("No se pudo extraer");
-        //    }
-        //    n.desconectar();
-        //    return encomienda;
-        //}
+        public DataSet BuscarPaquete(string cedula)
+        {
+             System.Data.DataSet datos = new System.Data.DataSet();
+            Datos.Conexion n = new Datos.Conexion();
+            try
+            {
+                string query = "select cod_encomienda, fecha, nombre, estado from encomiendas where nombre = '" + cedula + "' and id_terminal = '" + getTerminal()+ "'and estado = Procesando";
+                NpgsqlDataAdapter add = new NpgsqlDataAdapter(query, n.conectar());
+                add.Fill(datos);
+                return datos;
+            }
+            catch (Exception e)
+            {
+            }
+            n.desconectar();
+            return datos;
+        }
+       
+       
         public string enviarEncomienda(string codEnc, string dirigido, double pagar, string terminal, string unidad, string fecha)
         {
             String mensaje = "Encomienda Enviada";
@@ -112,7 +137,7 @@ namespace Datos
             }
             catch (NpgsqlException e)
             {
-                throw new Exception("No se pudo insertar");
+                throw new Exception("No se pudo insertar",e);
             }
             catch (Exception e)
             {

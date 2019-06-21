@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data;
 using Datos;
 
 namespace Logica
@@ -27,6 +25,11 @@ namespace Logica
             return codigo;
         }
 
+        public string MontoCaja()
+        {
+            return da.MontodeCaja(getDate);
+        }
+
         public void RegistarU(string codigoN, string nombreN, string contra)
         {
             da.RegistarUsu(codigoN, nombreN, contra);
@@ -34,7 +37,7 @@ namespace Logica
         public string getDate()
         {
             String fecha = "";
-            fecha = DateTime.Now.ToString("dd/MM/yyyyHH:mm:ss");
+            fecha = DateTime.Now.ToString("dd/MM/yyyy");
             return fecha;
         }
 
@@ -54,9 +57,10 @@ namespace Logica
             return mensaje;
         }
 
-        public void buscarPaquete(string cedula)
+        public DataSet buscarPaquete(string cedula)
         {
-            da.BuscarPaquete(cedula);
+            return da.BuscarPaquete(cedula);
         }
+
     }
 }

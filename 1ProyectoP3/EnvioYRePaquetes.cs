@@ -14,11 +14,13 @@ namespace _1ProyectoP3
     public partial class EnvioYRePaquetes : Form
     {
         Logica1 log = new Logica1();
+        String cedula = "";
         public EnvioYRePaquetes()
         {
             InitializeComponent();
             codTerminal.DataSource = log.extraerTermiales();
             codUnidad.DataSource = log.extraerUnidades();
+            
             
         }
 
@@ -48,13 +50,10 @@ namespace _1ProyectoP3
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            String cedula = numCedula.Text;
-            log.buscarPaquete(cedula);
+            cedula = numCedula.Text;
+            tabla.DataSource = log.buscarPaquete(cedula).Tables[0];
+            
         }
 
-        private void NumCedula_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

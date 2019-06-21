@@ -16,7 +16,7 @@ namespace _1ProyectoP3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Encomiendas());
+            Application.Run(new Login());
         }
     }
 }

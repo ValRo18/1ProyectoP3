@@ -46,7 +46,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.numCedula = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabla = new System.Windows.Forms.DataGridView();
             this.NumEncomienda = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Persona = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,7 +55,7 @@
             this.tabControl1.SuspendLayout();
             this.Enviar.SuspendLayout();
             this.Recibidos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabla)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -202,7 +202,7 @@
             this.Recibidos.Controls.Add(this.button3);
             this.Recibidos.Controls.Add(this.numCedula);
             this.Recibidos.Controls.Add(this.label2);
-            this.Recibidos.Controls.Add(this.dataGridView1);
+            this.Recibidos.Controls.Add(this.tabla);
             this.Recibidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Recibidos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Recibidos.Location = new System.Drawing.Point(4, 25);
@@ -226,9 +226,9 @@
             // 
             this.button3.BackColor = System.Drawing.Color.LightSeaGreen;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(520, 219);
+            this.button3.Location = new System.Drawing.Point(500, 214);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(135, 40);
+            this.button3.Size = new System.Drawing.Size(193, 40);
             this.button3.TabIndex = 3;
             this.button3.Text = "Buscar Paquete";
             this.button3.UseVisualStyleBackColor = false;
@@ -240,7 +240,6 @@
             this.numCedula.Name = "numCedula";
             this.numCedula.Size = new System.Drawing.Size(175, 24);
             this.numCedula.TabIndex = 2;
-            this.numCedula.TextChanged += new System.EventHandler(this.NumCedula_TextChanged);
             // 
             // label2
             // 
@@ -251,21 +250,21 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Numero de cedula\r\n de la persona que retira:";
             // 
-            // dataGridView1
+            // tabla
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tabla.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tabla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NumEncomienda,
             this.Fecha,
             this.Persona,
             this.Estado});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 49);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(471, 358);
-            this.dataGridView1.TabIndex = 0;
+            this.tabla.Location = new System.Drawing.Point(6, 51);
+            this.tabla.Name = "tabla";
+            this.tabla.RowHeadersWidth = 51;
+            this.tabla.RowTemplate.Height = 24;
+            this.tabla.Size = new System.Drawing.Size(471, 358);
+            this.tabla.TabIndex = 0;
             // 
             // NumEncomienda
             // 
@@ -322,7 +321,7 @@
             this.Enviar.PerformLayout();
             this.Recibidos.ResumeLayout(false);
             this.Recibidos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabla)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -348,7 +347,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox numCedula;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView tabla;
         private System.Windows.Forms.DataGridViewTextBoxColumn NumEncomienda;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn Persona;
