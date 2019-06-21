@@ -34,6 +34,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -48,7 +49,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(263, 109);
+            this.textBox1.Location = new System.Drawing.Point(285, 108);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(151, 22);
             this.textBox1.TabIndex = 1;
@@ -65,7 +66,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(263, 192);
+            this.textBox2.Location = new System.Drawing.Point(285, 192);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(151, 22);
             this.textBox2.TabIndex = 3;
@@ -74,18 +75,19 @@
             // 
             this.button1.BackColor = System.Drawing.Color.SpringGreen;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(601, 479);
+            this.button1.Location = new System.Drawing.Point(567, 482);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 35);
+            this.button1.Size = new System.Drawing.Size(157, 35);
             this.button1.TabIndex = 4;
             this.button1.Text = "Hacer Cierre";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.MediumTurquoise;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(477, 144);
+            this.button2.Location = new System.Drawing.Point(532, 147);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(92, 30);
             this.button2.TabIndex = 5;
@@ -93,12 +95,25 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(680, 1);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(70, 43);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "Volver";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
             // CierreCajaEncomienda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(751, 542);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
@@ -120,5 +135,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

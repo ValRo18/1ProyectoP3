@@ -100,6 +100,8 @@
             this.codigo.Name = "codigo";
             this.codigo.Size = new System.Drawing.Size(139, 27);
             this.codigo.TabIndex = 4;
+            this.codigo.Text = "ENC-001";
+            this.codigo.TextChanged += new System.EventHandler(this.Codigo_TextChanged);
             // 
             // contrasena
             // 
@@ -110,6 +112,8 @@
             this.contrasena.PasswordChar = '*';
             this.contrasena.Size = new System.Drawing.Size(139, 27);
             this.contrasena.TabIndex = 5;
+            this.contrasena.Text = "a";
+            this.contrasena.TextChanged += new System.EventHandler(this.Contrasena_TextChanged);
             // 
             // label3
             // 

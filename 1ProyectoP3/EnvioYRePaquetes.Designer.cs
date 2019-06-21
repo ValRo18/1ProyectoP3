@@ -47,10 +47,6 @@
             this.numCedula = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabla = new System.Windows.Forms.DataGridView();
-            this.NumEncomienda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Persona = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Enviar.SuspendLayout();
@@ -106,7 +102,7 @@
             // codUnidad
             // 
             this.codUnidad.FormattingEnabled = true;
-            this.codUnidad.Location = new System.Drawing.Point(233, 277);
+            this.codUnidad.Location = new System.Drawing.Point(262, 277);
             this.codUnidad.Name = "codUnidad";
             this.codUnidad.Size = new System.Drawing.Size(157, 24);
             this.codUnidad.TabIndex = 13;
@@ -114,28 +110,28 @@
             // codTerminal
             // 
             this.codTerminal.FormattingEnabled = true;
-            this.codTerminal.Location = new System.Drawing.Point(233, 222);
+            this.codTerminal.Location = new System.Drawing.Point(262, 222);
             this.codTerminal.Name = "codTerminal";
             this.codTerminal.Size = new System.Drawing.Size(157, 24);
             this.codTerminal.TabIndex = 12;
             // 
             // codEnco
             // 
-            this.codEnco.Location = new System.Drawing.Point(233, 124);
+            this.codEnco.Location = new System.Drawing.Point(262, 124);
             this.codEnco.Name = "codEnco";
             this.codEnco.Size = new System.Drawing.Size(157, 22);
             this.codEnco.TabIndex = 11;
             // 
             // dirigida
             // 
-            this.dirigida.Location = new System.Drawing.Point(233, 179);
+            this.dirigida.Location = new System.Drawing.Point(262, 179);
             this.dirigida.Name = "dirigida";
             this.dirigida.Size = new System.Drawing.Size(157, 22);
             this.dirigida.TabIndex = 10;
             // 
             // pago
             // 
-            this.pago.Location = new System.Drawing.Point(233, 328);
+            this.pago.Location = new System.Drawing.Point(262, 328);
             this.pago.Name = "pago";
             this.pago.Size = new System.Drawing.Size(157, 22);
             this.pago.TabIndex = 9;
@@ -221,6 +217,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "Entregar";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // button3
             // 
@@ -254,45 +251,14 @@
             // 
             this.tabla.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tabla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.NumEncomienda,
-            this.Fecha,
-            this.Persona,
-            this.Estado});
             this.tabla.Location = new System.Drawing.Point(6, 51);
+            this.tabla.MultiSelect = false;
             this.tabla.Name = "tabla";
             this.tabla.RowHeadersWidth = 51;
             this.tabla.RowTemplate.Height = 24;
+            this.tabla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.tabla.Size = new System.Drawing.Size(471, 358);
             this.tabla.TabIndex = 0;
-            // 
-            // NumEncomienda
-            // 
-            this.NumEncomienda.HeaderText = "NumEncomienda";
-            this.NumEncomienda.MinimumWidth = 6;
-            this.NumEncomienda.Name = "NumEncomienda";
-            this.NumEncomienda.Width = 125;
-            // 
-            // Fecha
-            // 
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.MinimumWidth = 6;
-            this.Fecha.Name = "Fecha";
-            this.Fecha.Width = 125;
-            // 
-            // Persona
-            // 
-            this.Persona.HeaderText = "Persona";
-            this.Persona.MinimumWidth = 6;
-            this.Persona.Name = "Persona";
-            this.Persona.Width = 125;
-            // 
-            // Estado
-            // 
-            this.Estado.HeaderText = "Estado";
-            this.Estado.MinimumWidth = 6;
-            this.Estado.Name = "Estado";
-            this.Estado.Width = 125;
             // 
             // button2
             // 
@@ -348,9 +314,5 @@
         private System.Windows.Forms.TextBox numCedula;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView tabla;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NumEncomienda;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Persona;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
     }
 }

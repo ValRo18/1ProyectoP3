@@ -12,14 +12,16 @@ namespace _1ProyectoP3
 {
     public partial class Encomiendas : Form
     {
-        public Encomiendas()
+        string codigoUsuario;
+        public Encomiendas(string codigoUsuario)
         {
             InitializeComponent();
+            this.codigoUsuario = codigoUsuario;
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            EnvioYRePaquetes en = new EnvioYRePaquetes();
+            EnvioYRePaquetes en = new EnvioYRePaquetes(codigoUsuario);
             en.Show();
         }
 

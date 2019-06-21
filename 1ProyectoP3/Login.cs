@@ -39,17 +39,18 @@ namespace _1ProyectoP3
 
             String cod = codigo.Text;
             String con = contrasena.Text;
-            if (log.ValidarIngreso(cod, con) == "ADT")
+            string codigoUsuario = log.ValidarIngreso(cod, con);
+            if (codigoUsuario == "ADT")
             {
-                Administrador admi = new Administrador();
+                Administrador admi = new Administrador(cod);
                 this.Hide();
                 admi.Show();
             }
-            else if (log.ValidarIngreso(cod, con) == "TIQ") {
+            else if (codigoUsuario == "TIQ") {
                 Tiquetes ti = new Tiquetes();
             }
-            else if (log.ValidarIngreso(cod, con) == "ENC") {
-                Encomiendas en = new Encomiendas();
+            else if (codigoUsuario == "ENC") {
+                Encomiendas en = new Encomiendas(cod);
                 this.Hide();
                 en.Show();
             }
@@ -65,6 +66,16 @@ namespace _1ProyectoP3
         }
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Codigo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Contrasena_TextChanged(object sender, EventArgs e)
         {
 
         }

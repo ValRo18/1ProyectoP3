@@ -4,7 +4,6 @@ C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\bin\Debug\Npgsql.dll
 C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\bin\Debug\Npgsql.pdb
 C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\bin\Debug\Npgsql.xml
-C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
 C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
 C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\obj\Debug\Datos.csproj.CopyComplete
 C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\obj\Debug\Datos.dll
@@ -31,3 +30,4 @@ C:\Users\MAFAR\Desktop\Proyecto1\1ProyectoP3\Datos\obj\Debug\Datos.csproj.CoreCo
 C:\Users\MAFAR\Desktop\Proyecto1\1ProyectoP3\Datos\obj\Debug\Datos.csproj.CopyComplete
 C:\Users\MAFAR\Desktop\Proyecto1\1ProyectoP3\Datos\obj\Debug\Datos.dll
 C:\Users\MAFAR\Desktop\Proyecto1\1ProyectoP3\Datos\obj\Debug\Datos.pdb
+C:\Users\Valeria\Desktop\1ProyectoP3\1ProyectoP3\Datos\obj\Debug\Datos.csprojAssemblyReference.cache

@@ -25,15 +25,27 @@ namespace Logica
             return codigo;
         }
 
+        public void setTerminal(string codigoUsuario)
+        {
+            da.setTerminal(Convert.ToInt32(da.getTerminal(codigoUsuario)));
+        }
+
         public string MontoCaja()
         {
-            return da.MontodeCaja(getDate);
+            string monto = da.MontodeCaja(getDate());
+            return monto;
         }
 
         public void RegistarU(string codigoN, string nombreN, string contra)
         {
             da.RegistarUsu(codigoN, nombreN, contra);
         }
+
+        public string cierreDeCaja(int montoCaja)
+        {
+            return da.CierredeCaja(getDate(), montoCaja);
+        }
+
         public string getDate()
         {
             String fecha = "";
@@ -41,7 +53,7 @@ namespace Logica
             return fecha;
         }
 
-        public List<String> extraerTermiales() {
+        public List<String> extraerTerminales() {
             List<String> terminales = da.extraerTerminales();
             return terminales;
         }
@@ -62,5 +74,9 @@ namespace Logica
             return da.BuscarPaquete(cedula);
         }
 
+        public string EntregarPaquete(string id)
+        {
+            return da.EntregarPaquete(id);
+        }
     }
 }

@@ -15,12 +15,14 @@ namespace _1ProyectoP3
     {
         Logica1 log = new Logica1();
         String cedula = "";
-        public EnvioYRePaquetes()
+        string codigoUsuario;
+        public EnvioYRePaquetes(string codigoUsuario)
         {
             InitializeComponent();
-            codTerminal.DataSource = log.extraerTermiales();
+            this.codigoUsuario = codigoUsuario;
+            log.setTerminal(codigoUsuario);
+            codTerminal.DataSource = log.extraerTerminales();
             codUnidad.DataSource = log.extraerUnidades();
-            
             
         }
 
@@ -42,17 +44,21 @@ namespace _1ProyectoP3
             string mensaje = log.insertarEncomienda(codEnc, diri, pagar, terminal, unidad);
             MessageBox.Show(mensaje);
         }
-
-        private void Fecha_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button3_Click(object sender, EventArgs e)
         {
             cedula = numCedula.Text;
-            tabla.DataSource = log.buscarPaquete(cedula).Tables[0];
-            
+            DataSet data = log.buscarPaquete(cedula);
+            tabla.AutoGenerateColumns = true;
+            tabla.DataSource = data.Tables[0];
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+
+            string id = tabla.SelectedRows[0].Cells[0].EditedFormattedValue.ToString();
+            string mensaje = log.EntregarPaquete(id);
+            MessageBox.Show(mensaje);
+            numCedula.Clear();
         }
 
     }

@@ -16,18 +16,63 @@ namespace Datos
         Datos.Conexion n = new Datos.Conexion();
         private int terminal;
         public void setTerminal(int termin) {
-
-            terminal = termin ;
+            this.terminal = termin ;
         }
         public int getTerminal() {
             return this.terminal;
         }
-       
 
+        public string getTerminal(string codigoUsuario)
+        {
+           
+            String terminal = "";
+            String query = $"select id_terminal from usuarios where codigo = '{codigoUsuario}'";
+            try
+            {
+                NpgsqlCommand comm = new NpgsqlCommand(query, n.conectar());
+                NpgsqlDataReader rs = comm.ExecuteReader();
+                while (rs.Read())
+                {
+                        terminal = rs.GetValue(0).ToString();
+                }
+            }
+            catch (Exception x)
+            {
+                throw new Exception("No se pudo insertar");
+            }
+            n.desconectar();
+            return terminal;
+        }
 
+        public string CierredeCaja(string fecha, int montoCaja) {
+            String mensaje = "Cierre de caja realizado con exito";
+            Datos.Conexion n = new Datos.Conexion();
+            String sqlCode = "insert into cierreEncomiendas(fecha,monto)" +
+                "values('{0}',{1});";
+            sqlCode = string.Format(sqlCode,fecha,montoCaja);
+            try
+            {
+                NpgsqlCommand command = new NpgsqlCommand(sqlCode, n.conectar());
+                command.ExecuteNonQuery();
+            }
+            catch (NpgsqlException e)
+            {
+                throw new Exception("No se pudo insertar", e);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+            finally
+            {
+                n.desconectar();
+            }
+            return mensaje;
+        }
+        
         public String ValidarIngresoD(string codigo, string contra)
         {
-            Datos.Conexion n = new Datos.Conexion();
+            
             String codigoUsuario = "";
             String query = "select * from usuarios";
             try
@@ -53,9 +98,29 @@ namespace Datos
             return codigoUsuario;
         }
 
-        public string MontodeCaja(DateTime fecha)
+        public string EntregarPaquete(string id)
         {
-            Datos.Conexion n = new Datos.Conexion();
+            String query = "UPDATE encomiendas SET estado='Entregado' where id_encomienda ="+id+"";
+            string men = "";
+            try
+            {
+                NpgsqlCommand comm = new NpgsqlCommand(query, n.conectar());
+                comm.ExecuteNonQuery();
+                men = "Se a entregado el paquete con exito!";
+            }
+            catch (NpgsqlException x) {
+                throw new Exception("No se pudo hacer la entrega",x);
+            }
+            catch (Exception x)
+            {
+                throw new Exception(x.Message);
+            }
+            n.desconectar();
+            return men;
+        }
+        public string MontodeCaja(string fecha)
+        {
+            
             String query = "select sum(total) from encomiendas where fecha ='"+fecha+"'";
             String monto = "";
             try
@@ -80,7 +145,7 @@ namespace Datos
            
             List<String> terminales = new List<String>();
 
-            String query = "select id_terinal from terminal where id_terinal <>"+terminal;
+            String query = "select id_terinal from terminal where id_terinal <>"+getTerminal();
             String nombre = "";
             try
             {
@@ -108,7 +173,7 @@ namespace Datos
             Datos.Conexion n = new Datos.Conexion();
             try
             {
-                string query = "select cod_encomienda, fecha, nombre, estado from encomiendas where nombre = '" + cedula + "' and id_terminal = '" + getTerminal()+ "'and estado = Procesando";
+                string query = "select id_encomienda,cod_encomienda, fecha, nombre, estado from encomiendas where nombre = '" + cedula + "' and id_terminal = '" + getTerminal()+ "'and estado = 'Procesando'";
                 NpgsqlDataAdapter add = new NpgsqlDataAdapter(query, n.conectar());
                 add.Fill(datos);
                 return datos;

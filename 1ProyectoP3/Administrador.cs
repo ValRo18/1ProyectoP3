@@ -14,9 +14,11 @@ namespace _1ProyectoP3
     public partial class Administrador : Form
     {
         Logica1 log = new Logica1();
-        public Administrador()
+        string codigoUsuario;
+        public Administrador(string codigoUsuario)
         {
             InitializeComponent();
+            this.codigoUsuario = codigoUsuario;
         }
 
         private void TabPage1_Click(object sender, EventArgs e)
@@ -150,7 +152,7 @@ namespace _1ProyectoP3
 
         private void Button21_Click(object sender, EventArgs e)
         {
-            Encomiendas en = new Encomiendas();
+            Encomiendas en = new Encomiendas(codigoUsuario);
             en.Show();
         }
 
