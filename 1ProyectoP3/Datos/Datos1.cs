@@ -44,8 +44,16 @@ namespace Datos
             return terminal;
         }
 
+
+
+        /// <summary>
+        /// Closes the parcels box.
+        /// </summary>
+        /// <param name="fecha"></param> the date of the close
+        /// <param name="montoCaja"></param>the amount of the box
+        /// <returns></returns>if the cash closure was made
         public string CierredeCaja(string fecha, int montoCaja) {
-            String mensaje = "Cierre de caja realizado con exito";
+           String mensaje = "Cierre de caja realizado con exito";
             Datos.Conexion n = new Datos.Conexion();
             String sqlCode = "insert into cierreEncomiendas(fecha,monto)" +
                 "values('{0}',{1});";
@@ -69,7 +77,13 @@ namespace Datos
             }
             return mensaje;
         }
-        
+
+        /// <summary>
+        /// Validates user input to the system
+        /// </summary>
+        /// <param name="codigo"></param> the user cod
+        /// <param name="contra"></param> the user password
+        /// <returns></returns> the user cod
         public String ValidarIngresoD(string codigo, string contra)
         {
             
@@ -98,6 +112,11 @@ namespace Datos
             return codigoUsuario;
         }
 
+        /// <summary>
+        /// change the status of the package to delivered
+        /// </summary>
+        /// <param name="id"></param>the package id
+        /// <returns></returns> it was delivered or not
         public string EntregarPaquete(string id)
         {
             String query = "UPDATE encomiendas SET estado='Entregado' where id_encomienda ="+id+"";
@@ -118,6 +137,11 @@ namespace Datos
             n.desconectar();
             return men;
         }
+        /// <summary>
+        /// extract the amount that was made per day of sending of commended
+        /// </summary>
+        /// <param name="fecha"></param> the date of the day
+        /// <returns></returns> the amount
         public string MontodeCaja(string fecha)
         {
             
@@ -141,6 +165,10 @@ namespace Datos
             return monto;
         }
 
+        /// <summary>
+        /// extracts the terminals from the database
+        /// </summary>
+        /// <returns></returns> the terminals
         public List<String> extraerTerminales() {
            
             List<String> terminales = new List<String>();
@@ -167,6 +195,11 @@ namespace Datos
             return terminales;
         }
 
+        /// <summary>
+        /// look for the package
+        /// </summary>
+        /// <param name="cedula"></param> the person id
+        /// <returns></returns> the package
         public DataSet BuscarPaquete(string cedula)
         {
              System.Data.DataSet datos = new System.Data.DataSet();
@@ -184,8 +217,18 @@ namespace Datos
             n.desconectar();
             return datos;
         }
-       
-       
+
+
+        /// <summary>
+        /// send the parcel
+        /// </summary>
+        /// <param name="codEnc"></param> parcel cod
+        /// <param name="dirigido"></param>The person to whom the package is addressed
+        /// <param name="pagar"></param> the price
+        /// <param name="terminal"></param> the id terminal
+        /// <param name="unidad"></param> the id unidad
+        /// <param name="fecha"></param> the date
+        /// <returns></returns> if it was sent
         public string enviarEncomienda(string codEnc, string dirigido, double pagar, string terminal, string unidad, string fecha)
         {
             String mensaje = "Encomienda Enviada";
@@ -215,7 +258,11 @@ namespace Datos
             return mensaje;
         }
 
-        public List<String> extraerUnidades()
+       /// <summary>
+       /// extracts the units from the database
+       /// </summary>
+       /// <returns></returns> the units
+       public List<String> extraerUnidades()
         {
             Datos.Conexion n = new Datos.Conexion();
             List<String> unidades = new List<String>();
