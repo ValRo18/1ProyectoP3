@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,6 +41,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -49,14 +52,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -157,17 +160,17 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.Transparent;
-            chartArea5.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart1.Legends.Add(legend5);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(183, 6);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chart1.Series.Add(series5);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(447, 322);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -175,6 +178,9 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.button4);
+            this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.textBox3);
             this.tabPage2.Controls.Add(this.dateTimePicker1);
             this.tabPage2.Controls.Add(this.label7);
@@ -185,6 +191,7 @@
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -192,12 +199,36 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Consultas1";
             // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(669, 220);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(119, 24);
+            this.textBox3.TabIndex = 10;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(313, 218);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 24);
+            this.dateTimePicker1.TabIndex = 9;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(6, 204);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(281, 36);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "\r\nCuentas reservaciones se han  echo en  :";
+            // 
             // textBox2
             // 
             this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(559, 121);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.Size = new System.Drawing.Size(100, 24);
             this.textBox2.TabIndex = 7;
             // 
             // textBox1
@@ -205,7 +236,7 @@
             this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(413, 121);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(100, 24);
             this.textBox1.TabIndex = 6;
             // 
             // button6
@@ -234,7 +265,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(448, 89);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(34, 17);
+            this.label6.Size = new System.Drawing.Size(37, 18);
             this.label6.TabIndex = 2;
             this.label6.Text = "Más";
             // 
@@ -273,49 +304,27 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Consulta Unidades";
             // 
-            // label7
+            // dataGridView1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(6, 204);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(281, 36);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "\r\nCuentas reservaciones se han  echo en  :";
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightGray;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(107, 175);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(589, 367);
+            this.dataGridView1.TabIndex = 4;
             // 
-            // dateTimePicker1
+            // button8
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(313, 218);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 9;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(669, 220);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(119, 22);
-            this.textBox3.TabIndex = 10;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(76, 39);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(197, 54);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "\r\nUnidades que tienen el\r\n permiso de transitar vigente \r\n";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(467, 57);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(301, 36);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "\r\nUnidades que no tienen permiso de transitar ";
+            this.button8.BackColor = System.Drawing.Color.SpringGreen;
+            this.button8.Location = new System.Drawing.Point(575, 108);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(85, 41);
+            this.button8.TabIndex = 3;
+            this.button8.Text = "Consultar";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.Button8_Click);
             // 
             // button7
             // 
@@ -328,26 +337,51 @@
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.Button7_Click);
             // 
-            // button8
+            // label9
             // 
-            this.button8.BackColor = System.Drawing.Color.SpringGreen;
-            this.button8.Location = new System.Drawing.Point(575, 108);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(85, 41);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Consultar";
-            this.button8.UseVisualStyleBackColor = false;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(467, 57);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(301, 36);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "\r\nUnidades que no tienen permiso de transitar ";
             // 
-            // dataGridView1
+            // label8
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightGray;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(107, 175);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(589, 367);
-            this.dataGridView1.TabIndex = 4;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(76, 39);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(197, 54);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "\r\nUnidades que tienen el\r\n permiso de transitar vigente \r\n";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 308);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(211, 54);
+            this.label10.TabIndex = 11;
+            this.label10.Text = "\r\nCuánto dinero se ha generado \r\npor la venta de tiquetes hoy:\r\n";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.button4.Location = new System.Drawing.Point(246, 326);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(89, 36);
+            this.button4.TabIndex = 12;
+            this.button4.Text = "Consultar";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(378, 338);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(135, 24);
+            this.textBox4.TabIndex = 13;
             // 
             // Reportes
             // 
@@ -399,5 +433,8 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label10;
     }
 }
